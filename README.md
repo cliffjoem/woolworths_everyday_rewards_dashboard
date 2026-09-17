@@ -156,4 +156,4 @@ woolworths_everyday_rewards_dashboard/
 Financial Data Analyst | Master of Financial Analysis (FinTech)
 
 - Portfolio: [datascienceportfol.io/cliffjoem](https://www.datascienceportfol.io/cliffjoem)
-- LinkedIn: *add your LinkedIn URL*
+- LinkedIn: [*add your LinkedIn URL*](https://www.linkedin.com/in/josephcliffordmuiruri/)
