@@ -7,7 +7,7 @@
 
 A single-page Power BI dashboard analysing loyalty programme performance across 11 Sydney stores. It uses a Woolworths Everyday Rewards–style dataset of **1,000 members** and **5,508 transactions** from January 2023 to November 2024.
 
-![Dashboard overview](images/dashboard-overview.png)
+![Dashboard overview](dashboard-overview.png)
 
 ---
 
@@ -52,6 +52,16 @@ I built this dashboard during my data analytics training at The Data Analytics I
 - **Transaction period:** 5 January 2023 to 8 November 2024
 - **Registration period:** 1 January 2023 to 30 June 2023
 
+### Data preview
+
+**Customers table**
+
+![Customers table](customers-table.png)
+
+**Transactions table**
+
+![Transactions table](transactions-table.png)
+
 ## Approach
 
 | Phase | Work completed |
@@ -63,7 +73,7 @@ I built this dashboard during my data analytics training at The Data Analytics I
 
 ## Data Model
 
-![Data model](images/data-model.png)
+![Data model](data-model.png)
 
 - **Relationship:** `wool_customers` (one) to `wool_transactions` (many), on `customer_id`
 - **Cross-filter direction:** Single, so customer attributes such as membership status filter transaction measures
@@ -123,24 +133,21 @@ I built this dashboard during my data analytics training at The Data Analytics I
 ## Repository Structure
 
 ```
-woolworths-everyday-rewards-dashboard/
+woolworths_everyday_rewards_dashboard/
 ├── README.md
-├── dashboard/
-│   └── Woolies_Dashboard.pbix
-├── data/
-│   └── woolworths_rewards_dataset.xlsx
-└── images/
-    ├── dashboard-overview.png
-    ├── data-model.png
-    ├── customers-table.png
-    └── transactions-table.png
+├── Woolies_Dashboard.pbix            # Power BI report file
+├── woolworths_rewards_dataset.xlsx   # Source dataset (customers and transactions)
+├── dashboard-overview.png            # Report page screenshot
+├── data-model.png                    # Model view screenshot
+├── customers-table.png               # Customers table preview
+└── transactions-table.png            # Transactions table preview
 ```
 
 ## How to Use
 
 1. Clone or download this repository.
-2. Open `dashboard/Woolies_Dashboard.pbix` in [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
-3. If prompted, point the data source to `data/woolworths_rewards_dataset.xlsx` and refresh.
+2. Open `Woolies_Dashboard.pbix` in [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+3. If prompted, point the data source to `woolworths_rewards_dataset.xlsx` and refresh.
 4. Use the **2023** and **2024** buttons to filter the report by year.
 
 ## Author
